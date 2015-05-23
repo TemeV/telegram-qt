@@ -86,9 +86,9 @@ else()
         Qt5::Core
         Qt5::Network
     )
-    target_include_directories(telegram-qt${QT_VERSION_MAJOR} PRIVATE
-        ${QT5_INCLUDES}
-    )
+#    target_include_directories(telegram-qt${QT_VERSION_MAJOR} PRIVATE
+#        ${QT5_INCLUDES}
+#    )
 endif()
 
 target_link_libraries(telegram-qt${QT_VERSION_MAJOR}
