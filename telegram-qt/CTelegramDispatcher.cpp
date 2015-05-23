@@ -271,7 +271,7 @@ CTelegramDispatcher::CTelegramDispatcher(QObject *parent) :
     m_messageReceivingFilterFlags(TelegramNamespace::MessageFlagRead),
     m_acceptableMessageTypes(TelegramNamespace::MessageTypeText),
     m_autoReconnectionEnabled(false),
-    m_pingInterval(15000),
+    m_pingInterval(600000),
     m_mediaDataBufferSize(128 * 256), // 128 KB
     m_initializationState(0),
     m_requestedSteps(0),
